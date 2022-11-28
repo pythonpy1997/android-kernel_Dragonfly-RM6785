@@ -7,8 +7,8 @@ source ~/.bashrc && source ~/.profile
 export LC_ALL=C && export USE_CCACHE=1
 ccache -M 100G
 export ARCH=arm64
-export KBUILD_BUILD_HOST=Anupam_Roy
-export KBUILD_BUILD_USER="Gorilla669"
+export KBUILD_BUILD_HOST=pythonpy1997
+export KBUILD_BUILD_USER="pythonpy1997"
 git clone --depth=1 https://gitlab.com/Panchajanya1999/azure-clang.git clang
 
 [ -d "out" ] && rm -rf AnyKernel && rm -rf out || mkdir -p out
@@ -36,9 +36,9 @@ git clone --depth=1 https://github.com/Johny8988/AnyKernel3.git AnyKernel
 cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
 cd AnyKernel
 date=$(date "+%Y-%m-%d")
-zip -r9 ThunderStorm-lto-KERNEL-RM6785-$date.zip *
+zip -r9 DragonFly-lto-KERNEL-RM6785-$date.zip *
 curl -sL https://git.io/file-transfer | sh
-./transfer wet ThunderStorm-lto-KERNEL-RM6785-$date.zip
+./transfer wet DragonFly-lto-KERNEL-RM6785-$date.zip
 }
 
 compile
